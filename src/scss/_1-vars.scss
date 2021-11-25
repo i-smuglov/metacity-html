@@ -6,11 +6,11 @@ $colorBody: #2FB0B7;
 //Main text
 $colorMain: #000000;
 //White text
-$whiteText: #d2d3e8;
+$whiteText: #FFFFFF;
 //h1,h2,h3,h4,h5,h6
-$colorH1: #fff;
+$colorH1: #FFFFFF;
 $colorH2: #FFFFFF;
-$colorH3: #FFFFFF;
+$colorH3: #000000;
 $colorH4: #000000;
 $colorH5: #000000;
 $colorH6: #000000;
@@ -22,26 +22,18 @@ $colorH6: #000000;
 
 body {
 	background: $colorBody;
-	color: $colorMain;
+	color: $colorMain;	
+	
+	
+	.background{		
+	
+	}
 }
 h1 {
 	color: $colorH1;
 }
 h2 {
-	color: $colorH2;
-	position: relative;
-	display: inline-block;
-	padding-left: 60px;
-	&::before {
-		content: "";
-		display: block;
-		position: absolute;
-		border-bottom: solid 3px #fff;
-		height: 0px;
-		width: 40px;
-		left: 0px;
-		top: 50%;
-	}
+	color: $colorH2;	
 }
 h3 {
 	color: $colorH3;

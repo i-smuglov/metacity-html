@@ -1,20 +1,117 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;800;900&display=swap');
 
 body {
 	font-family: "Montserrat", sans-serif;
 	font-style: normal;
-	font-weight: normal;
-	font-size: 16px;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 137.9%;
 }
 
 h1 {
 	display: flex;
 	justify-content: center;
+	color: #FAFF00;
+	font-weight: 900;
+	font-size: 81.9917px;
+	line-height: 103%;
+	-webkit-text-stroke: 8px rgba(0,0,0,1);
+	white-space: nowrap;
+	
 }
 
+.h2-title{
+	position: relative;
+	margin: 0 auto;
+	max-width: 640px;
+	@include md-d{
+		max-width: 490px;
+	}
+	@include sm-d{
+		max-width: 300px;
+	}
+	@include xs-d{
+		max-width: 260px;
+	}
+	&::before{
+		content: "";
+		background: url("../img/h2-left.png") no-repeat;
+		position: absolute;
+		left: -42px;
+		top: 9px;
+		width: 87px;
+		height: 80px;
+		z-index: 1;
+		@include md-d{
+			width: 60px;
+			height: 55px;
+			background-size: contain;
+		}
+		@include sm-d{
+			width: 35px;
+			height: 32px;
+			background-size: contain;
+			left: -32px;
+		}
+	}
+	&::after{
+		content: "";
+		background: url("../img/h2-right.png");
+		position: absolute;
+		right: -42px;
+		top: 9px;
+		width: 87px;
+		height: 80px;
+		z-index: 1;
+		@include md-d{
+			width: 60px;
+			height: 55px;
+			background-size: contain;
+		}
+		@include sm-d{
+			width: 35px;
+			height: 32px;
+			background-size: contain;
+			right: -32px;
+		}
+	}
+}
 h2 {
-	font-weight: bold;
-	font-size: 35px;
-	line-height: 130%;
-	letter-spacing: 0.015em;
+	padding: 15px 0px 15px 0px;	
+	font-weight: 900;
+	font-size: 36px;
+	line-height: 118.9%;
+	text-transform: uppercase;	
+	color: #FFFFFF;
+	background: linear-gradient(180deg, #FF5252 0%, #F42020 144.37%);
+	border: 2px solid #7B1515;
+	box-sizing: border-box;
+	border-radius: 6px;
+	position: relative;
+	text-align: center;
+	z-index: 2;
+	@include md-d{
+		font-size: 25px;
+		padding: 10px 0px 10px 0px;	
+	}
+	@include sm-d{
+		padding: 6px 0px 6px 0px;
+		font-size: 16px;
+		line-height: 137.9%;		
+	}
+}
+
+h3{
+	font-weight: 800;
+	font-size: 24px;
+	line-height: 137.9%;
+	text-transform: uppercase;
+	text-align: center;
+	@include sm-d{		
+		font-size: 16px;
+		line-height: 137.9%;
+	}
+
+
 }

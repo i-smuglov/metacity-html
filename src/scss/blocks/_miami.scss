@@ -1,0 +1,107 @@
+.miami{
+   &__subtitle{
+      margin-top: 34px;
+      h3{
+         color: $whiteText;
+      }
+      @include sm-d{
+         max-width: 196px;
+        margin: 24px auto 0px;
+      }
+   }
+   &__content{
+      display: flex;
+      align-items: center;
+      @include md-d{
+         flex-direction: column;
+      }
+   }
+   &__img{
+      flex: 1 0 40%;
+      margin-right: 50px;
+      @include md-d{
+         margin-right: 0;
+         margin-top: 20px;
+      }
+   }
+   &__text{
+      p{
+        position: relative;
+         padding-left: 30px;
+         margin-top: 63px;
+         font-weight: 500;
+         font-size: 18px;
+         line-height: 137.9%;
+         color: #FFFFFF;
+         &:before{
+            content: "";            
+            background: url("../img/come.png") no-repeat;            
+            position: absolute;
+            top: 4px;
+            left: 0;
+            width: 22px;
+            height: 22px;
+         }
+         @include sm-d{
+            margin-top: 30px;
+         }
+      }
+   }
+   &__wrapper{
+      margin-top: 87px;
+   }
+
+   &__box{
+      background: rgba(255, 255, 255, 0.86);
+      border-radius: 10px;
+      border: 4px solid #FF4F4F;
+      // border-image-source: linear-gradient(180deg, #FF4F4F 0%, #2FB0B7 100%);
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 30px 0px 50px 0px;
+      height: 658px;
+      justify-content: space-between;
+      position: relative;
+      &:first-child{
+         margin-top: 0;
+      }
+   }
+   &__box-img{
+      max-width: 170px;
+      padding: 16px 30px 16px 30px;
+      background: #79C7FF;
+      border: 6px solid #FFFFFF;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+      border-radius: 6px;
+      margin: 0 auto;
+   }
+   &__box-title{
+      max-width: 600px;
+      margin: 30px auto 0px;
+   }
+   &__box-subtitle{
+      margin-top: 20px;
+      font-weight: bold;
+      line-height: 137.9%;
+      text-transform: uppercase;
+      color: #111111;
+      opacity: 0.5;
+      text-align: center;
+   }
+   &__progressbar{
+      margin-top: 50px;
+   }
+   &__btn{
+      margin-top: 40px;
+   }
+   &__remark{
+      position: absolute;
+      text-align: center;
+      bottom: 10px;
+      font-size: 14px;
+      line-height: 137.9%;
+      text-transform: lowercase;
+   }
+}
