@@ -7,17 +7,15 @@
    }
    &__bg{
       margin-top: 45px;
-      background: url("../img/cityzens-bg.png") no-repeat;
-      background-position: center;
-      background-size: cover;
-      height: 530px;
+      width: 100%;
+      min-width: 800px;
       margin-bottom: 60px;
       @include lg-d{
          margin-top: 45px;
-         height: 470px;
+
       }
       @include sm-d{
-         height: 252px;
+
          margin-top: 25px;
          margin-bottom: 40px;
       }
